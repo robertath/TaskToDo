@@ -18,6 +18,7 @@ namespace TasksToDo.Controllers
         {
             var _repo = new TaskRepositoryCSV();
             ViewBag.Tasks = _repo.Lendo.Tasks;
+            Console.Writeline("Listando To Doings...");
             return View("list");
         }
 
@@ -25,6 +26,7 @@ namespace TasksToDo.Controllers
         {
             var _repo = new TaskRepositoryCSV();
             ViewBag.Tasks = _repo.Lidos.Tasks;
+            Console.Writeline("Listando Done...");
             return View("list");
         }
 
