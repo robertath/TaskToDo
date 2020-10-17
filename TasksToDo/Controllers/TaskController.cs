@@ -35,6 +35,7 @@ namespace TasksToDo.Controllers
         {
             var repo = new TaskRepositoryCSV();
             var livro = repo.Todos.First(l => l.Id == id);
+            Console.Writeline("Details...");
             return livro.Detalhes();
         }
 
