@@ -20,6 +20,8 @@ namespace TasksToDo
             ImprimeLista(_repo.ParaLer);
             ImprimeLista(_repo.Lendo);
             ImprimeLista(_repo.Lidos);
+
+            Console.WriteLine("Teste novo");
         }
 
         static void ImprimeLista(ListOfTasks lista)

@@ -10,6 +10,7 @@ namespace TasksToDo.Controllers
         {
             var _repo = new TaskRepositoryCSV();
             ViewBag.Tasks = _repo.ParaLer.Tasks;
+            Console.Writeline("Listando To Dos...");
             return View("list");
         }
 
